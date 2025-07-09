@@ -1,10 +1,21 @@
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
 int main()
 {
+    long n;
+    long long a = 0, b = 1;
 
-    cout << "aladeen" << endl;
+    cin >> n;
+
+    while (n--)
+    {
+        long long sum = a + b;
+        a = b;
+        b = sum;
+        
+    }
+cout << sum << endl;
     return 0;
 }
